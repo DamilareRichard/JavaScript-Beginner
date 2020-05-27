@@ -12,7 +12,7 @@
 
 // //Concatenation
 	// const name ='John';
-// 	const age = 30;
+	// const age = 30;
 // console.log('my name is ' + name + ' and i am ' + age)
 
 // // //Template String
