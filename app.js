@@ -17,19 +17,23 @@
 				setTimeout(() => msg.remove(), 3000);
 
 				} else {
-					const li =document.createElement('li');
-					li.appendChild(document.createTextNode(`${usernameInput.value} : ${emailInput.value} : ${passwordInput.value}`));
+					const ul = document.querySelector('ul.items');
 
+				const items = [usernameInput.value, emailInput.value, passwordInput.value];
 
-					userList.appendChild(li);
+				let html = '';
+
+				items.forEach(item => {
+					html += `<li>${item}</li>`;
+
+				ul.innerHTML = html;
+
+				});
 
 					// 	//Clear fields
 					usernameInput.value = '';
 					emailInput.value = '';
 					passwordInput.value = '';
-
-
-
 				  }
 				  	
 			}
